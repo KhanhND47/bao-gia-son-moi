@@ -1,5 +1,7 @@
-﻿import { ItemManager } from "@/components/admin/item-manager";
+import { ItemManager } from "@/components/admin/item-manager";
 import { getAdminItems } from "@/lib/paint-items";
+
+export const dynamic = "force-dynamic";
 
 export default async function AdminPackagesPage() {
   const items = await getAdminItems("PACKAGE");

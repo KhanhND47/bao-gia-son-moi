@@ -1,6 +1,8 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 import { getAdminStats } from "@/lib/paint-items";
+
+export const dynamic = "force-dynamic";
 
 export default async function AdminDashboardPage() {
   const stats = await getAdminStats();

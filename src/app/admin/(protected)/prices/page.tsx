@@ -1,5 +1,7 @@
-﻿import { PriceMatrixManager } from "@/components/admin/price-matrix-manager";
+import { PriceMatrixManager } from "@/components/admin/price-matrix-manager";
 import { getItemsForPriceMatrix } from "@/lib/paint-items";
+
+export const dynamic = "force-dynamic";
 
 export default async function AdminPriceMatrixPage() {
   const items = await getItemsForPriceMatrix();
